@@ -14,3 +14,5 @@ class DataManager {
     
     static var email: Set<String> = ["one@gmail.com","two@gmail.com","three@gmail.com","four@gmail.com", "five@gmail.com", "six@gmail.com", "seven@gmail.com", "eight@gmail.com", "nine@gmail.com", "ten@gmail.com"]
 }
+
+

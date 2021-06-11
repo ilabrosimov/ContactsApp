@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0494C6A3266FFE6B000915FF /* CustomPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C6A2266FFE6B000915FF /* CustomPersonViewController.swift */; };
+		04AD21E8267304770032C069 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD21E7267304770032C069 /* MainTabViewController.swift */; };
+		04AD21EC26730AE40032C069 /* CustomPersonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD21EB26730AE40032C069 /* CustomPersonViewCell.swift */; };
 		04C9C99E266FB1F600E159D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C99D266FB1F600E159D0 /* AppDelegate.swift */; };
 		04C9C9A0266FB1F600E159D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C99F266FB1F600E159D0 /* SceneDelegate.swift */; };
 		04C9C9A2266FB1F600E159D0 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C9A1266FB1F600E159D0 /* PersonViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0494C6A2266FFE6B000915FF /* CustomPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPersonViewController.swift; sourceTree = "<group>"; };
+		04AD21E7267304770032C069 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		04AD21EB26730AE40032C069 /* CustomPersonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPersonViewCell.swift; sourceTree = "<group>"; };
 		04C9C99A266FB1F600E159D0 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9C99D266FB1F600E159D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C9C99F266FB1F600E159D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		04C9C9B2266FB29800E159D0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04AD21E7267304770032C069 /* MainTabViewController.swift */,
 				04C9C9A1266FB1F600E159D0 /* PersonViewController.swift */,
 				04C9C9B9266FCD9C00E159D0 /* PersonInfoViewController.swift */,
 				0494C6A2266FFE6B000915FF /* CustomPersonViewController.swift */,
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				04C9C9A3266FB1F600E159D0 /* Main.storyboard */,
+				04AD21EB26730AE40032C069 /* CustomPersonViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C9C9A2266FB1F600E159D0 /* PersonViewController.swift in Sources */,
+				04AD21E8267304770032C069 /* MainTabViewController.swift in Sources */,
 				0494C6A3266FFE6B000915FF /* CustomPersonViewController.swift in Sources */,
+				04AD21EC26730AE40032C069 /* CustomPersonViewCell.swift in Sources */,
 				04C9C9BA266FCD9C00E159D0 /* PersonInfoViewController.swift in Sources */,
 				04C9C9B8266FC57900E159D0 /* DataManager.swift in Sources */,
 				04C9C99E266FB1F600E159D0 /* AppDelegate.swift in Sources */,
