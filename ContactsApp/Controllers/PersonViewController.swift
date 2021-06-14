@@ -1,15 +1,8 @@
-//
-//  ViewController.swift
-//  ContactsApp
-//
-//  Created by ilabrosimov on 08.06.2021.
-//
+
 
 import UIKit
-
 class PersonViewController: UIViewController {
 
-    
     //MARK: - IB Outlets
     @IBOutlet weak var contactsTableView: UITableView!
     
@@ -17,14 +10,11 @@ class PersonViewController: UIViewController {
     var personsList: [Person] = []
     private var currentPerson : Person?
     
-  
     //MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
-       
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

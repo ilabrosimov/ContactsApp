@@ -10,7 +10,6 @@
 		04532F7D2677A3170012E920 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04532F7C2677A3170012E920 /* TableHeader.swift */; };
 		04532F842677B68F0012E920 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04532F832677B68F0012E920 /* Lobster-Regular.ttf */; };
 		04532F862677BBD30012E920 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04532F852677BBD30012E920 /* TableCell.swift */; };
-		04532F882677BEA30012E920 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04532F872677BEA30012E920 /* TableViewCell.swift */; };
 		0494C6A3266FFE6B000915FF /* CustomPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C6A2266FFE6B000915FF /* CustomPersonViewController.swift */; };
 		04AD21E8267304770032C069 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD21E7267304770032C069 /* MainTabViewController.swift */; };
 		04C9C99E266FB1F600E159D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9C99D266FB1F600E159D0 /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 		04532F7C2677A3170012E920 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		04532F832677B68F0012E920 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		04532F852677BBD30012E920 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
-		04532F872677BEA30012E920 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		0494C6A2266FFE6B000915FF /* CustomPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPersonViewController.swift; sourceTree = "<group>"; };
 		04AD21E7267304770032C069 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		04C9C99A266FB1F600E159D0 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +118,6 @@
 				04C9C9A3266FB1F600E159D0 /* Main.storyboard */,
 				04532F7C2677A3170012E920 /* TableHeader.swift */,
 				04532F852677BBD30012E920 /* TableCell.swift */,
-				04532F872677BEA30012E920 /* TableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 				0494C6A3266FFE6B000915FF /* CustomPersonViewController.swift in Sources */,
 				04C9C9BA266FCD9C00E159D0 /* PersonInfoViewController.swift in Sources */,
 				04C9C9B8266FC57900E159D0 /* DataManager.swift in Sources */,
-				04532F882677BEA30012E920 /* TableViewCell.swift in Sources */,
 				04532F7D2677A3170012E920 /* TableHeader.swift in Sources */,
 				04C9C99E266FB1F600E159D0 /* AppDelegate.swift in Sources */,
 				04C9C9B6266FC0B700E159D0 /* Person.swift in Sources */,
