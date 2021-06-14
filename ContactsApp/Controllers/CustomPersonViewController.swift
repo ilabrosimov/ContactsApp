@@ -8,8 +8,7 @@ class CustomPersonViewController : UIViewController, UITableViewDataSource, UITa
     var persons : [Person] = []
     private let personsTableView : UITableView = {
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: "personInfoCell")
+        tableView.register(TableCell.self, forCellReuseIdentifier: "TableCell")
         tableView.register(TableHeader.self, forHeaderFooterViewReuseIdentifier: "header")
         return tableView
     }()
@@ -31,8 +30,8 @@ class CustomPersonViewController : UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "personInfoCell", for: indexPath)
-        cell.textLabel?.text = "Person # \(indexPath.row) Section\(indexPath.section)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell", for: indexPath) as! TableCell
+        
         return cell
     }
     func numberOfSections(in tableView: UITableView) -> Int {
