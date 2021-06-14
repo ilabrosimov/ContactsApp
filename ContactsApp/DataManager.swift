@@ -6,7 +6,7 @@
 //
 
 class DataManager {
-    static var name :Set<String>  = ["Aaran", "Aaren", "Aarez", "Aarman", "Aaron", "Aaron-James", "Aarron", "Aaryan", "Aaryn", "Aayan", "Aazaan", "Abaan", "Abbas", "Abdallah", "Abdalroof", "Abdihakim", "Abdirahman", "Abdisalam"]
+    static var name :Set<String>  = ["Jonh", "Mark", "Lilo", "Abe", "Tom", "Rick", "Aarron", "Morty", "Jedi", "Bob", "Rocki", "Jecki", "Van", "Mikle", "Rose", "Leli", "Voxy", "Shim"]
     
     static var lastName: Set<String> = ["Hernandez","Herrera", "Herring","Holloway", "Howard","Howell","Hunt", "Hurley"]
     

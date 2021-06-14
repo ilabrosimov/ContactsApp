@@ -15,6 +15,7 @@ class PersonInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "\(person?.name ?? "") \(person?.lastName ?? "")"
         phoneLabel.text = person?.tel ?? ""
         emailLabel.text = person?.email ?? ""
 

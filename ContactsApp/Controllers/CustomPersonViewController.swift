@@ -1,82 +1,50 @@
-//
-//  SecondaryPersonViewController.swift
-//  ContactsApp
-//
-//  Created by ilabrosimov on 08.06.2021.
-//
 
 import UIKit
 
-class CustomPersonViewController: UIViewController {
-    
-    @IBOutlet weak var customPersonTableView : UITableView!
+
+
+class CustomPersonViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+
     var persons : [Person] = []
+    private let personsTableView : UITableView = {
+        let tableView = UITableView()
+        tableView.register(UITableViewCell.self,
+                           forCellReuseIdentifier: "personInfoCell")
+        tableView.register(TableHeader.self, forHeaderFooterViewReuseIdentifier: "header")
+        return tableView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        customPersonTableView.delegate = self
-        customPersonTableView.dataSource = self
-       title = "Custom Persons List"
-        
-
-    }
-}
-//MARK: - Extensions
-extension CustomPersonViewController : UITableViewDataSource{
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        for i in 0...persons.count
-        {
-            
-            if section == i {
-                return persons[i].name
-            }
-        }
-        return ""
+        title = "Persons  List"
+        view.addSubview(personsTableView)
+        personsTableView.dataSource = self
+        personsTableView.delegate = self
         
     }
-   
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        personsTableView.frame = view.bounds
+    }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return persons.count
-    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonInfoCell") as! CustomPersonViewCell
-        if (indexPath.row % 2 == 0) {
-            cell.imageView?.image = UIImage.init(systemName: "phone")
-            cell.descriptionLabel.text = persons[indexPath.section].tel
-            
-        }
-        if (indexPath.row % 2 != 0) {
-            cell.imageView?.image = UIImage.init(systemName: "envelope")
-            cell.descriptionLabel.text = persons[indexPath.section].email
-            
-            }
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personInfoCell", for: indexPath)
+        cell.textLabel?.text = "Person # \(indexPath.row) Section\(indexPath.section)"
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel()
-        var sectionIndex = 0
-        for person in persons {
-            if section == sectionIndex {
-                label.text = person.name + " " + person.lastName
-                label.font = .boldSystemFont(ofSize: 25)
-                
-            }
-            sectionIndex += 1
-        }
-        label.backgroundColor = .systemGray5
-        
-        return label
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return persons.count
     }
- 
-    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as! TableHeader
+        header.configureLabel(text: "\(persons[section].name)  \(persons[section].lastName)")
+        return header
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
 }
-extension CustomPersonViewController : UITableViewDelegate {
-   
-    
-}
+
