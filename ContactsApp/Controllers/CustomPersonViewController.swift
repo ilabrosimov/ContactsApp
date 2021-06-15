@@ -52,4 +52,5 @@ extension CustomPersonViewController : UITableViewDelegate {
         header.configureLabel(text: "\(persons[section].name)  \(persons[section].lastName)")
         return header
     }
+    
 }

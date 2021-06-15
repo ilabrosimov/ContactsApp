@@ -38,6 +38,7 @@ class TableCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(image)
         contentView.addSubview(label)
+        selectionStyle = .none
     }
     //MARK: - Layout methods
     override func layoutSubviews() {
